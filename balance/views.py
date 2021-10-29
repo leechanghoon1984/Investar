@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from bs4 import BeautifulSoup
-from urllib import urlopen
+from urllib import request as req
 
 # Create your views here.
 def get_data(symbol):
