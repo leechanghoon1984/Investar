@@ -32,7 +32,7 @@ def main_view(request):
         sum = int(price) * int(x[1][0])
         stock_sum = format(sum, ',')
         rows.append([stock_name, x[0], cur_price, stock_count, cur_rate, stock_sum])
-        total = total + int(price) * int([1][0])
+        total = total + int(price) * int(x[1][0])
     
     total_amount = format(total, ',')
     values = {'rows' : rows, 'total' : total_amount}
