@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^(?P<name>[A-Z][a-z]*)$', views.sayHello),
     path('index/', index_views.main_view),
-    path('balance/' balance_views.main_view),
+    path('balance/', balance_views.main_view),
 ]
